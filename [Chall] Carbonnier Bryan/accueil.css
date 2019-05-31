@@ -1,0 +1,457 @@
+@font-face{
+	font-family: "Montserrat";
+		src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+	}
+@font-face{
+	font-family: "cinzel";
+		src: url("fonts/Cinzel/Cinzel-Black.ttf");
+}
+
+/* la je vais commencer le contenue " general" de la page */
+
+body, nav {
+  padding:0;
+  margin:0;
+}
+
+body{
+
+	background-image: url("img/background.jpg");
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+nav {
+  background-color: #373737;
+  width:99.5vw;
+  height:15vh;
+  position:relative;
+  border:solid 4px #DCD0C0;
+  border-bottom: none;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+ul, li {
+  list-style-type:none;
+  padding: 5vh;
+
+
+}
+
+li {
+  font-family: "Montserrat";
+  height: 5vh;
+  width: auto;
+  margin:0 25px;
+  font-size:4.5vh;
+}
+
+
+
+.one ul {
+  display:inline-flex;
+  justify-content:flex-end;
+}
+
+.logo-one {
+  background-color: none;
+  height:10vh;
+  width:20vw;
+  background-image: url("img/olivier-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5vh;
+}
+
+/* a partir de la je fait le contenue de la page d'accueil*/
+
+#mid{
+	border: 2px solid #C0B283;
+	height: 40vh;
+	width: 45vw;
+	position:absolute;
+	top: 35vh; left: 25vw;
+	background-image: url("img/pattern_01.jpg");
+	background-size: cover;
+
+}
+#dessus{
+	border: 2px solid #C0B283;
+	height: 12vh;
+	width: 16vw;
+	background-image: url("img/olivier-logo.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top:3vh; left: 15.5vw;
+	background-position: center;
+	
+
+}
+
+#description{
+	font-family: "Montserrat";
+	font-size:1.8vh;
+	height: 8vh;
+	max-width: 50vh;
+	color: #373737;
+	position: absolute;
+	top: 18vh; left:13vw;
+
+
+}
+
+#services{   /* ceci est le boutton */
+	font-family: "Montserrat";
+	position: absolute;
+	top: 31vh; left:19vw;
+	background: #373737;
+	border:none;
+	color:#C0B283;
+	font-size:2vh ;
+	padding: 2vh 4vh 3vh 4vh;
+	box-shadow:1px 1px 3px #999;
+}
+
+
+a{
+	text-decoration: none;
+	color: #C0B283;
+}
+
+/*les titres de toutes les pages */
+
+.titre{
+	border:3px solid #C0B283 ;
+	max-width: 50vw;
+	text-align: center;
+	background-position: center;
+	color: #C0B283;
+	text-decoration: underline;
+	margin-left: 25vw;
+	margin-top: 0;
+	font-size:4vh;
+	font-family: "cinzel";
+}
+
+/* la page services */
+
+.partieg{
+
+	height: 75vh;
+	width: 65vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+#montres{
+	border:2px solid #C0B283;
+	background-image: url("img/img_03.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 38vh;
+	width: 44vw;
+	position: relative;
+	top: -1vh; left: 0vw;
+	margin-left: 5vw;
+}
+#montres:hover{
+	background-image: url(img/img_02.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30vw;
+	border:2px solid #C0B283;
+	margin-left: 15vw;
+	padding-right: 0;
+}
+#montresagousset{
+	border:2px solid #C0B283;
+	background-image: url("img/img_01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 35vh;
+	width: 19vw;
+	margin-left: 12vw;
+}
+#montresagousset:hover{
+	background-image: url(img/img_04.jpg);
+}
+
+#reparation{
+	border:2px solid #C0B283;
+	background-image: url("img/img_11.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 35vh;
+	width: 23vw;
+	margin-right: 7vw;
+}
+#reparation:hover{
+	background-image: url(img/img_10.jpg);
+	background-size: cover;
+	width: 12vw;
+	border:2px solid #C0B283;
+}
+.partied{
+	border:2px solid #C0B283;
+	height: 70vh;
+	width: 35vw;
+	background-image: url(img/img_09.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 23vh; right: 5vw;
+	padding-bottom: 2vh;
+}
+.partied:hover{
+	background-image: url(img/img_07.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 48vh;
+	width: 39vw;
+	border:2px solid #C0B283;
+	position: absolute;
+	top: 23vh; right: 1vh;
+}
+
+/* page à propos, on essaye de faire en grid cette fois , pour apprendre au passage <3 */
+
+.grid{
+
+	display: grid;
+	grid-template-columns: 0% 45% 30%;
+	grid-template-rows: 35vh 30vh;
+	grid-column-gap: 20vh;
+	grid-row-gap: 5vh;
+
+
+}
+
+.grid div:nth-child(1){
+   background-image: url("img/pattern_01.jpg");
+    background-size: cover;
+    border:2px solid #C0B283;
+    font-size: 1.8vh;
+    text-align: justify-all;
+    padding-left: 5vh;
+    padding-right: 5vh;
+   	grid-column-start: 2;
+   	border:2px solid #C0B283;
+   	font-family: "montserrat"
+}
+
+.grid div:nth-child(2){
+    background-image: url("img/olivier.jpg");
+    background-size: cover;
+    border:2px solid #C0B283;
+   
+}
+
+.grid div:nth-child(3){
+     
+     grid-column-start: 2;
+
+    
+}
+
+.grid div:nth-child(4){
+    background-image: url("img/pattern_01.jpg");
+    background-size: cover;
+    border:2px solid #C0B283;
+    font-size: 2vh;
+    text-align: justify-all;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+}
+
+h2{
+	font-family: "cinzel"
+	font-size: 3vh;
+	text-align: center;
+	color: #373737
+}
+.sociaux{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#facebook{
+  background-image: url("img/facebook.png");
+  margin: 8vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 14vh;
+    
+ 
+}
+
+#twitter{
+  background-image: url("img/twitter.png");
+  margin-top: 8vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 14vh;
+  width: 7vw;
+   
+}
+
+#instagram{
+  background-image: url("img/instagram.png");
+	margin: 8vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 8vw;
+  
+
+
+}
+
+/* je vais maintenant faire la page de contact */
+
+.gridy{
+
+	display: grid;
+	grid-template-columns:  40% 35%;
+	grid-template-rows: 75vh;
+	grid-gap: 25vh;
+
+}
+.gridy div:nth-child(1){
+	text-align: center;
+	height: 65vh;
+	width:  53vh;
+	background-image: url("img/pattern_04.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 20vh;
+	color:#DCD0C0;
+	}
+
+
+.gridy div:nth-child(2){
+	}
+
+	/* https://www.pierre-giraud.com/html-css/cours-complet/creation-formulaire-simple-html.php */
+	label, legend{
+		background-color: #373737;
+	
+	}
+	#votremessage{
+		width: 25vw;
+		height: 25vh;
+		text-align: justify;
+		font-size: 2vh;
+	}
+
+	#nom, #prenom,#mail,#telephone{ 
+		width: 50vh;
+		font-size: 2vh;
+	}
+	.precision{
+		font-size: 2vh;
+	}
+	legend{
+		font-size: 2vh;
+	}
+	fieldset{
+		border:none;
+			
+	}
+
+	iframe{
+		border-right: 5vh;
+		border:2px solid #C0B283;
+		width:45vw;
+		height:65vh;
+	}
+/* restauratio , page suplémentaire test slide */
+.grille{
+	display: grid;
+	height: 99%;
+	grid-template-columns: 25vw 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr ;
+}
+
+.titrebonus{
+	border:3px solid #C0B283 ;
+	text-align: center;
+	color: #C0B283;
+	margin-top: 0vh;
+	text-decoration: underline;
+	font-size:4vh;
+	font-family: "cinzel";
+	grid-column: 2/4;
+	grid-row: 2/3;
+}
+
+#explication{
+	grid-column: 2/4;
+	grid-row: 4/7;
+}
+
+
+
+@keyframes AutoSlide {		 /* temps donné aux slides */
+	0%, 15%, 90% {
+		left: 0px; /*1ère image*/
+	}
+	35%, 50% {
+		left: -44vw; /*2ème image*/
+	}
+	
+}
+
+#slideshow {		/* la taille de ce qui apparait */
+
+	position: relative;
+	width: 850px;
+	height: 475px;
+	overflow: hidden;
+
+}
+#sContent li {		/* pour que sa apparait en ligne */
+	display: inline;
+}
+#sContent {			/* j'ai pas trop compris mais j'ai bidouillé et sa marche */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150vw;
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#text {	/* explication de la page suplémentaire */ 
+	grid-column: 2/4;
+	grid-row: 3/4;
+	text-align: center;
+	align-items: center;
+	color:#C0B283;
+	border:2px solid #C0B283;
+	margin-bottom: 5vh;
+	padding-bottom: 1vh;
+}
+#textg{
+	grid-column: 1/2;
+	grid-row:4/6;
+	color:#C0B283;
+	border:2px solid #C0B283;
+	font-size: 5vh;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 10vh;
+}
